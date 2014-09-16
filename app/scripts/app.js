@@ -1,24 +1,24 @@
 (function() {
-	var el = new Everlive("ZVJ8yTSrJPJmDYED");
+	var el = new Everlive("PLACE YOUR API KEY HERE");
 
-	/*var groceryDataSource = new kendo.data.DataSource({
+	var groceryDataSource = new kendo.data.DataSource({
 		type: "everlive",
 		transport: {
 			typeName: "Groceries"
 		}
 	});
 
-	function closeDialog() {
+	/*function closeDialog() {
 		$("#add").data("kendoMobileModalView").close();
 		$("#grocery").val("");
 	}*/
 
 	function initialize() {
 		var app = new kendo.mobile.Application(document.body, { skin: "flat" });
-		/*$("#grocery-list").kendoMobileListView({
+		$("#grocery-list").kendoMobileListView({
 			dataSource: groceryDataSource,
 			template: "#: Name #"
-		});*/
+		});
 	}
 
 	/*window.addView = kendo.observable({
