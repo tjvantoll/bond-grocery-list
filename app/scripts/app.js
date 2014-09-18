@@ -1,5 +1,5 @@
 (function() {
-    var apiKey = "nMfdN0aMrPrHIqgv"
+    var apiKey = "YOUR API KEY"
     var el = new Everlive(apiKey);
 
     var groceryDataSource = new kendo.data.DataSource({
