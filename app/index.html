@@ -14,7 +14,7 @@
     <script src="scripts/app.js"></script>
 </head>
 <body>
-    <div data-role="view" data-title="Grocery List">
+    <div data-role="view" id="list" data-title="Grocery List">
         <div data-role="navbar">
             <span data-role="view-title"></span>
             <a data-role="button" data-align="right" data-rel="modalview" href="#add">Add</a>
@@ -31,8 +31,8 @@
 
         <ul data-role="listview" data-style="inset">
             <li>
-                <label for="grocery">
-                    Grocery:<input type="text" id="grocery">
+                <label>
+                    Grocery:<input type="text" data-bind="value: grocery">
                 </label>
             </li>
         </ul>

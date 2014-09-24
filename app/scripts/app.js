@@ -10,31 +10,31 @@
     });
 
     function initialize() {
-        var app = new kendo.mobile.Application(document.body, { skin: "flat" });
+        var app = new kendo.mobile.Application(document.body, {
+            skin: "flat",
+            transition: "slide"
+        });
         $("#grocery-list").kendoMobileListView({
             dataSource: groceryDataSource,
             template: "#: Name #"
         });
     }
 
-    function closeDialog() {
-        $("#add").data("kendoMobileModalView").close();
-        $("#grocery").val("");
-    }
-
     window.addView = kendo.observable({
         add: function() {
-            var grocery = $("#grocery").val();
-            if (grocery.trim() === "") {
+            if (this.grocery.trim() === "") {
                 navigator.notification.alert("Please provide a grocery.");
                 return;
             }
 
-            groceryDataSource.add({ Name: grocery });
-            groceryDataSource.one("sync", closeDialog);
+            groceryDataSource.add({ Name: this.grocery });
+            groceryDataSource.one("sync", this.close);
             groceryDataSource.sync();
         },
-        close: closeDialog
+        close: function() {
+            $("#add").data("kendoMobileModalView").close();
+            this.grocery = "";
+        }
     });
 
     document.addEventListener("deviceready", initialize);
