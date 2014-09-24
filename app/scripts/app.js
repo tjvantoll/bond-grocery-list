@@ -17,7 +17,10 @@
     });
 
     function initialize() {
-        var app = new kendo.mobile.Application(document.body, { skin: "flat" });
+        var app = new kendo.mobile.Application(document.body, {
+            skin: "flat",
+            transition: "slide"
+        });
     }
 
     document.addEventListener("deviceready", initialize);
