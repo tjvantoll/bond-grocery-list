@@ -9,7 +9,8 @@
     background: green;
     color: white;
 }
-a[href="#register"] {
+#login a {
     display: block;
     text-align: center;
+    margin: 1.5em;
 }
