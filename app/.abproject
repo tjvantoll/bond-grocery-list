@@ -1,8 +1,8 @@
 {
-	"ProjectName": "bond-app",
+	"ProjectName": "Grocery List",
 	"projectVersion": 1,
-	"AppIdentifier": "com.telerik.bondapp",
-	"DisplayName": "bond-app",
+	"AppIdentifier": "com.telerik.grocerylist",
+	"DisplayName": "Grocery List",
 	"Author": "",
 	"Description": "",
 	"BundleVersion": "1.0",
