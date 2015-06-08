@@ -1,4 +1,4 @@
-# AppBuilder Grocery Sample
+# AppBuilder Grocery List Sample
 
 This repository contains the [AppBuilder](http://www.telerik.com/appbuilder) grocery list sample used as part of the AppBuilder interactive tutorials. You can restart the tutorial at any time by clicking the button below:
 
