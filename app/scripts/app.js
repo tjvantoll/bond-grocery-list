@@ -6,7 +6,7 @@
         transport: {
             read: {
                 url: "https://api.everlive.com/v1/" + apiKey + "/Groceries",
-                dataType: "jsonp"
+                dataType: "json"
             }
         },
         schema: {
