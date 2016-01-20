@@ -109,10 +109,10 @@
             groceryDataSource.add({ Name: this.grocery });
             groceryDataSource.one("sync", this.close);
             groceryDataSource.sync();
+            this.set("grocery", "");
         },
         close: function() {
             $("#add").data("kendoMobileModalView").close();
-            this.grocery = "";
         }
     });
 
